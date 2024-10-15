@@ -8,6 +8,7 @@ import "./codeAlarm.css";
 export const CodeAlarm = () => {
   const { idNumber } = useParams();
   const url = `https://apiapartkeka.onrender.com/api/visit/getalarm?number=${idNumber}`;
+  //const url = `http://localhost:5002/api/visit/getalarm?number=${idNumber}`;
   const getFetch = useFetch(url);
 
   const { data, isLoading, errors } = getFetch;
