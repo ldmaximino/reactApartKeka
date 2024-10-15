@@ -1,0 +1,19 @@
+.btn-primary {
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(141, 135, 104);
+    border-color: bisque;
+    transition: background-color 0.5s ease, opacity 0.5s ease, color 0.5s ease; 
+}
+
+.btn-primary:hover {
+    opacity: 80%;
+    background-color: bisque;
+    color:black;
+}
+
+@media (min-width: 992px) { /* Modo PC */
+    .custom-height {
+      height: 15vh;
+    }
+  }

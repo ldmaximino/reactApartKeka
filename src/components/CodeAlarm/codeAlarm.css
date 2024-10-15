@@ -1,0 +1,99 @@
+.code-alarm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+  }
+  
+  .code-alarm-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); 
+  }
+  
+  .code-alarm-number {
+    font-size: 6rem; 
+    font-weight: bold;
+    color: rgb(94, 194, 13); 
+    border: 5px solid white; 
+    padding: 20px;
+    border-radius: 15px; 
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); 
+    animation: floating 3s ease-in-out infinite; 
+  }
+  
+  @keyframes floating {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-15px); 
+    }
+  }
+  
+  .loading-background {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(2); 
+    width: auto; 
+    height: auto; 
+    z-index: 1;
+  }
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .loading-background {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(2); 
+    width: auto; 
+    height: auto; 
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  .loading-icon {
+    color: rgb(189, 186, 170); 
+    font-size: 5rem; 
+    animation: spin 1s linear infinite; 
+    z-index: 2; 
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .error-title {
+    margin-top:40%;
+    font-size: 4rem;
+    color:red;
+  }
+
+  .noexist-title {
+    margin-top:40%;
+    font-size: 2.5rem;
+    color:white;
+  }
+  
+  .dni-error {
+    color:white;
+  }
+
+  @media (min-width: 992px) { /* Modo PC */
+    .error-title {
+      margin-top: 10%;
+    }
+  }
