@@ -1,0 +1,66 @@
+.guest-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: black; 
+  }
+
+
+.guest-input {
+  width: 100%;
+  font-size:1.5rem;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: grey;
+  color:rgb(21, 5, 56);
+}
+
+.btn-enviar {
+  margin-top:2rem;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.loading-background {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%) scale(2); 
+  width: auto; 
+  height: auto; 
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.loading-icon {
+  color: rgb(189, 186, 170); 
+  font-size: 5rem; 
+  animation: spin 1s linear infinite; 
+  z-index: 2; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 992px) { /* Modo PC */
+  .guest-input {
+    width: 100%;
+  }
+}
+
+#dni[type="number"]::-webkit-inner-spin-button,
+#dni[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Para Chrome, Safari y Edge */
+    margin: 0; /* Asegúrate de que no haya margen */
+}

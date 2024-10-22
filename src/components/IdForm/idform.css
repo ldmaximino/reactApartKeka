@@ -1,36 +1,42 @@
 .idForm-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 100vh;
-    background-color: black; 
-  }
-  
-  .idForm-title {
-    margin-top:2rem;
-    font-size: 2.2rem;
-    color: white;
-    margin-bottom: 20px; 
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); 
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
 
+.idForm-title {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+.idNumber {
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: grey;
+  color: rgb(21, 5, 56);
+}
+
+.btn-enviar {
+  margin-top: 2rem;
+}
+
+#idNumber[type="number"]::-webkit-inner-spin-button,
+#idNumber[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Para Chrome, Safari y Edge */
+    margin: 0; /* Asegúrate de que no haya margen */
+}
+
+@media (min-width: 768px) {
   .idNumber {
-    width: 60%;
-    font-size:1.5rem;
-    font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    background-color: grey;
-    color:rgb(21, 5, 56);
+    width: 20% !important; /* Ancho del 20% en pantallas grandes */
   }
-
-  .btn-enviar {
-    margin-top:2rem;
-  }
-
-  @media (min-width: 992px) { /* Modo PC */
-    .idNumber {
-      width: 20%;
-    }
-  }
+}

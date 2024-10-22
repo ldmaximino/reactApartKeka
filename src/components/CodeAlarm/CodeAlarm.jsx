@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import logoapart from "../../assets/apartkeka.ico";
 import { FaSpinner } from "react-icons/fa";
 import { useFetch } from "../../hooks/useFetch";
+import { URLBASE } from "../../config/config.js";
 import "./codeAlarm.css";
 
 export const CodeAlarm = () => {
   const { idNumber } = useParams();
-  const url = `https://apiapartkeka.onrender.com/api/visit/getalarm?number=${idNumber}`;
-  //const url = `http://localhost:5002/api/visit/getalarm?number=${idNumber}`;
-  const getFetch = useFetch(url);
+  const url = `${URLBASE}/api/visit/getalarm?number=${idNumber}`
+  const objMethod = {method: 'GET'};
+  const getFetch = useFetch(url, objMethod);
 
   const { data, isLoading, errors } = getFetch;
 

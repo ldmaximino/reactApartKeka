@@ -1,0 +1,145 @@
+.container-form {
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para que los elementos se apilen verticalmente */
+  align-items: center; /* Centrado horizontalmente */
+  height: 100vh; /* Centrado vertical */
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center; /* Centra los radio buttons */
+  margin-bottom: 10px; /* Espacio entre los radio buttons y el input */
+}
+
+.label-find {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input-find-guest {
+  font-size: 15px;
+  width: 80%; /* Ancho del 80% de la página en móviles */
+  margin-right: 10px; /* Espacio entre el input y el botón */
+  padding: 5px;
+}
+
+.huesped-style {
+  font-size:1.5rem;
+  color:rgb(230, 96, 39);
+}
+
+.input-style {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-find-guest,
+.btn-volver {
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(141, 135, 104);
+  border-color: bisque;
+  transition: background-color 0.5s ease, opacity 0.5s ease, color 0.5s ease;
+}
+
+.btn-find-guest:hover,
+.btn-volver:hover {
+  opacity: 80%;
+  background-color: bisque;
+  color: black; /* Cambiado para asegurar que el texto sea legible */
+}
+
+.visit-form {
+  max-width: 600px; /* Ajusta el ancho máximo del formulario */
+  width: 80%; /* Ocupar el 30% del ancho en PC */
+  margin: auto; /* Centra el formulario horizontalmente */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 1px solid #ccc; /* Contorno suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.codealarm {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 20px; 
+}
+
+.codealarm .form-label {
+  margin-right: 10px; 
+  font-weight: bold; 
+}
+
+.codealarm .input-style {
+  min-width: 70px;
+  max-width: 100px;
+  width: auto;
+  text-align: center;
+  font-size:1.2rem;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  background-color:rgb(230, 96, 39);
+  color:white;
+  padding:0.5;
+}
+
+#codeAlarm[type="number"]::-webkit-inner-spin-button,
+#codeAlarm[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Para Chrome, Safari y Edge */
+    margin: 0; /* Asegúrate de que no haya margen */
+}
+
+.error {
+    color: white;
+    font-size: 0.8em;
+    margin-top: 5px; /* Espaciado superior para errores */
+}
+
+.difhoras {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+button {
+    width: 100%; /* Botón de ancho completo */
+}
+
+h2 {
+    color: #007bff; /* Cambia el color del encabezado si deseas */
+}
+
+/* Estilos específicos para pantallas grandes */
+@media (min-width: 768px) {
+  .visit-form {
+    margin-top: 20px; /* Espaciado superior para pantallas grandes */
+    width: 30%; /* Ancho del 30% de la página en PC */
+  }
+
+  .btn-find-guest,
+  .btn-volver {
+    width: 10%;
+  }
+
+  .input-find-guest {
+    width: 30%; /* Ancho del 30% de la página en PC */
+  }
+
+  /* Agregar estilos para los campos de fecha y hora */
+  .form-control {
+    width: 100%; /* Asegura que los inputs ocupen el ancho completo del contenedor */
+  }
+}
+

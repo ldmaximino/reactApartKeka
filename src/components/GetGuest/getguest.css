@@ -1,0 +1,73 @@
+/* GetGuest.css */
+body {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+}
+
+.guest-list-container {
+    margin: 20px auto; /* Centrando horizontalmente el contenedor */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #1a1a1a; /* Fondo oscuro para el contenedor */
+    max-width: 800px; /* Ancho máximo para dispositivos grandes */
+    width: 90%; /* Ancho responsivo */
+}
+
+h2 {
+    color: #fff; /* Encabezados en blanco */
+    text-align: center; /* Centrar el encabezado */
+}
+
+.guest-list {
+    width: 100%;
+    border-collapse: collapse; /* Para evitar dobles bordes */
+}
+
+.guest-list th, .guest-list td {
+    padding: 10px;
+    text-align: center; /* Centrar texto en celdas */
+    border-bottom: 1px solid #444; /* Línea de separación entre filas */
+}
+
+.guest-list th {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto blanco para encabezado */
+}
+
+.guest-list tr:hover {
+    background-color: #444; /* Color de fondo para fila al pasar el ratón */
+}
+
+.guest-button {
+    background-color: #007BFF; /* Botón azul */
+    color: white; /* Texto del botón en blanco */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    text-align: center; /* Centrar texto en el botón */
+}
+
+.guest-button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+    .guest-list-container {
+        margin: 10px; /* Reducir margen en móviles */
+        padding: 10px; /* Reducir padding en móviles */
+    }
+
+    .guest-list th, .guest-list td {
+        padding: 8px; /* Reducir padding en celdas */
+    }
+
+    .guest-button {
+        padding: 6px 10px; /* Reducir padding en botones */
+        font-size: 14px; /* Ajustar tamaño de fuente */
+    }
+}

@@ -1,5 +1,5 @@
-import "./option.css";
 import { useNavigate } from "react-router-dom";
+import "./option.css";
 
 export const Option = ({ name, opt }) => {
   const navigate = useNavigate();

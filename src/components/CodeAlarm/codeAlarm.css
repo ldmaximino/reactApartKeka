@@ -94,6 +94,10 @@
 
   @media (min-width: 992px) { /* Modo PC */
     .error-title {
-      margin-top: 10%;
+      margin-top: 2%;
+    }
+
+    .noexist-title {
+      margin-top:10%;
     }
   }
